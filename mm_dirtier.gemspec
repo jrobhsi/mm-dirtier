@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'log_buddy'
   s.add_development_dependency 'jnunemaker-matchy', '~> 0.4.0'
-  s.add_development_dependency 'shoulda',           '~> 2.11'
+  s.add_development_dependency 'shoulda',           '~> 3.1.1'
 end
 
