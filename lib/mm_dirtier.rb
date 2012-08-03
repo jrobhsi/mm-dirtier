@@ -14,5 +14,5 @@ base_dir = File.dirname(__FILE__)
 ].each {|req| require File.join(base_dir,'mm_dirtier',req)}
 
 
-MongoMapper::Document.append_inclusions(MmDirtier::Plugins::Dirtier)
-MongoMapper::EmbeddedDocument.append_inclusions(MmDirtier::Plugins::Dirtier)
+MongoMapper::Document.plugin(MmDirtier::Plugins::Dirtier)
+MongoMapper::EmbeddedDocument.plugin(MmDirtier::Plugins::Dirtier)
